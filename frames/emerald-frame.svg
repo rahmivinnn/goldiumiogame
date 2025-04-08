@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="420" viewBox="0 0 300 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="emeraldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#50C878"/>
+      <stop offset="50%" style="stop-color:#3CB371"/>
+      <stop offset="100%" style="stop-color:#228B22"/>
+    </linearGradient>
+    <filter id="emeraldGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -7"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="10" y="10" width="280" height="400" rx="15" ry="15" 
+        fill="none" stroke="url(#emeraldBorder)" stroke-width="4" filter="url(#emeraldGlow)"/>
+
+  <!-- Corner Leaves -->
+  <path d="M15,15 Q25,5 35,15 Q25,25 15,15" fill="#3CB371" opacity="0.8"/>
+  <path d="M265,15 Q275,5 285,15 Q275,25 265,15" fill="#3CB371" opacity="0.8"/>
+  <path d="M15,405 Q25,395 35,405 Q25,415 15,405" fill="#3CB371" opacity="0.8"/>
+  <path d="M265,405 Q275,395 285,405 Q275,415 265,405" fill="#3CB371" opacity="0.8"/>
+
+  <!-- Decorative Elements -->
+  <path d="M150,20 Q160,30 150,40 Q140,30 150,20" fill="#50C878" opacity="0.8"/>
+  <path d="M150,380 Q160,390 150,400 Q140,390 150,380" fill="#50C878" opacity="0.8"/>
+  <path d="M20,210 Q30,200 40,210 Q30,220 20,210" fill="#50C878" opacity="0.8"/>
+  <path d="M260,210 Q270,200 280,210 Q270,220 260,210" fill="#50C878" opacity="0.8"/>
+
+  <!-- Vine Patterns -->
+  <path d="M50,10 Q150,20 250,10" fill="none" stroke="#228B22" stroke-width="1" opacity="0.5"/>
+  <path d="M50,410 Q150,400 250,410" fill="none" stroke="#228B22" stroke-width="1" opacity="0.5"/>
+  <path d="M10,50 Q20,150 10,370" fill="none" stroke="#228B22" stroke-width="1" opacity="0.5"/>
+  <path d="M290,50 Q280,150 290,370" fill="none" stroke="#228B22" stroke-width="1" opacity="0.5"/>
+
+  <!-- Leaf Accents -->
+  <circle cx="150" cy="30" r="3" fill="#90EE90" opacity="0.6"/>
+  <circle cx="150" cy="390" r="3" fill="#90EE90" opacity="0.6"/>
+  <circle cx="30" cy="210" r="3" fill="#90EE90" opacity="0.6"/>
+  <circle cx="270" cy="210" r="3" fill="#90EE90" opacity="0.6"/>
+</svg> 

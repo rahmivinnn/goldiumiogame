@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="silverPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <!-- Background -->
+      <rect width="40" height="40" fill="#C0C0C0" opacity="0.1"/>
+      
+      <!-- Decorative Elements -->
+      <line x1="0" y1="20" x2="40" y2="20" stroke="#A0A0A0" stroke-width="1" opacity="0.2"/>
+      <line x1="20" y1="0" x2="20" y2="40" stroke="#A0A0A0" stroke-width="1" opacity="0.2"/>
+      
+      <!-- Diagonal Lines -->
+      <line x1="0" y1="0" x2="40" y2="40" stroke="#A0A0A0" stroke-width="1" opacity="0.2"/>
+      <line x1="40" y1="0" x2="0" y2="40" stroke="#A0A0A0" stroke-width="1" opacity="0.2"/>
+      
+      <!-- Corner Dots -->
+      <circle cx="5" cy="5" r="2" fill="#E8E8E8" opacity="0.3"/>
+      <circle cx="35" cy="5" r="2" fill="#E8E8E8" opacity="0.3"/>
+      <circle cx="5" cy="35" r="2" fill="#E8E8E8" opacity="0.3"/>
+      <circle cx="35" cy="35" r="2" fill="#E8E8E8" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Apply Pattern -->
+  <rect width="200" height="200" fill="url(#silverPattern)"/>
+</svg> 

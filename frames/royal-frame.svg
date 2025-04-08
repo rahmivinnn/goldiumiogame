@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="420" viewBox="0 0 300 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="royalBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9370DB"/>
+      <stop offset="50%" style="stop-color:#8A2BE2"/>
+      <stop offset="100%" style="stop-color:#4B0082"/>
+    </linearGradient>
+    <filter id="royalGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -7"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="10" y="10" width="280" height="400" rx="15" ry="15" 
+        fill="none" stroke="url(#royalBorder)" stroke-width="4" filter="url(#royalGlow)"/>
+
+  <!-- Corner Crowns -->
+  <path d="M15,15 L25,5 L35,15 L25,20 Z" fill="#FFD700" opacity="0.8"/>
+  <path d="M265,15 L275,5 L285,15 L275,20 Z" fill="#FFD700" opacity="0.8"/>
+  <path d="M15,405 L25,395 L35,405 L25,410 Z" fill="#FFD700" opacity="0.8"/>
+  <path d="M265,405 L275,395 L285,405 L275,410 Z" fill="#FFD700" opacity="0.8"/>
+
+  <!-- Decorative Elements -->
+  <path d="M150,20 L160,10 L170,20 L160,25 L150,20" fill="#FFD700" opacity="0.8"/>
+  <path d="M150,400 L160,390 L170,400 L160,405 L150,400" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Royal Gems -->
+  <circle cx="25" cy="15" r="2" fill="#FF0000" opacity="0.9"/> <!-- Ruby -->
+  <circle cx="275" cy="15" r="2" fill="#4169E1" opacity="0.9"/> <!-- Sapphire -->
+  <circle cx="25" cy="405" r="2" fill="#50C878" opacity="0.9"/> <!-- Emerald -->
+  <circle cx="275" cy="405" r="2" fill="#FFD700" opacity="0.9"/> <!-- Gold -->
+
+  <!-- Ornate Patterns -->
+  <path d="M50,10 Q150,30 250,10" fill="none" stroke="#8A2BE2" stroke-width="2" opacity="0.5"/>
+  <path d="M50,410 Q150,390 250,410" fill="none" stroke="#8A2BE2" stroke-width="2" opacity="0.5"/>
+  <path d="M10,50 Q30,150 10,370" fill="none" stroke="#8A2BE2" stroke-width="2" opacity="0.5"/>
+  <path d="M290,50 Q270,150 290,370" fill="none" stroke="#8A2BE2" stroke-width="2" opacity="0.5"/>
+
+  <!-- Royal Fleur-de-lis -->
+  <path d="M145,25 Q150,15 155,25 Q150,30 145,25" fill="#FFD700" opacity="0.6"/>
+  <path d="M145,395 Q150,385 155,395 Q150,400 145,395" fill="#FFD700" opacity="0.6"/>
+  <path d="M25,205 Q30,195 35,205 Q30,210 25,205" fill="#FFD700" opacity="0.6"/>
+  <path d="M265,205 Q270,195 275,205 Q270,210 265,205" fill="#FFD700" opacity="0.6"/>
+</svg> 
