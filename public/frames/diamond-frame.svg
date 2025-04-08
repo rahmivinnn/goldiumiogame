@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="420" viewBox="0 0 300 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="diamondBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B9F2FF"/>
+      <stop offset="50%" style="stop-color:#87CEEB"/>
+      <stop offset="100%" style="stop-color:#4682B4"/>
+    </linearGradient>
+    <filter id="diamondGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -7"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="10" y="10" width="280" height="400" rx="15" ry="15" 
+        fill="none" stroke="url(#diamondBorder)" stroke-width="4" filter="url(#diamondGlow)"/>
+
+  <!-- Corner Diamonds -->
+  <path d="M15,15 L35,15 L25,30 Z" fill="#B9F2FF" opacity="0.8"/>
+  <path d="M265,15 L285,15 L275,30 Z" fill="#B9F2FF" opacity="0.8"/>
+  <path d="M15,405 L35,405 L25,390 Z" fill="#B9F2FF" opacity="0.8"/>
+  <path d="M265,405 L285,405 L275,390 Z" fill="#B9F2FF" opacity="0.8"/>
+
+  <!-- Decorative Elements -->
+  <path d="M150,25 L160,35 L150,45 L140,35 Z" fill="#87CEEB" opacity="0.8"/>
+  <path d="M150,375 L160,385 L150,395 L140,385 Z" fill="#87CEEB" opacity="0.8"/>
+  <path d="M25,210 L35,220 L25,230 L15,220 Z" fill="#87CEEB" opacity="0.8"/>
+  <path d="M275,210 L285,220 L275,230 L265,220 Z" fill="#87CEEB" opacity="0.8"/>
+
+  <!-- Sparkle Effects -->
+  <circle cx="150" cy="30" r="2" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="150" cy="390" r="2" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="30" cy="210" r="2" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="270" cy="210" r="2" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- Border Patterns -->
+  <path d="M50,10 L250,10" stroke="#B9F2FF" stroke-width="1" stroke-dasharray="15,5" opacity="0.5"/>
+  <path d="M50,410 L250,410" stroke="#B9F2FF" stroke-width="1" stroke-dasharray="15,5" opacity="0.5"/>
+  <path d="M10,50 L10,370" stroke="#B9F2FF" stroke-width="1" stroke-dasharray="15,5" opacity="0.5"/>
+  <path d="M290,50 L290,370" stroke="#B9F2FF" stroke-width="1" stroke-dasharray="15,5" opacity="0.5"/>
+</svg> 

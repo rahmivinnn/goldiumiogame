@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="emeraldFur" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#50C878"/>
+      <stop offset="50%" style="stop-color:#3CB371"/>
+      <stop offset="100%" style="stop-color:#228B22"/>
+    </linearGradient>
+    <linearGradient id="emeraldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#50C878"/>
+    </linearGradient>
+    <filter id="emerald">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -7"/>
+    </filter>
+  </defs>
+
+  <!-- Body -->
+  <path d="M200,50 C300,50 350,150 350,250 C350,350 300,380 200,380 C100,380 50,350 50,250 C50,150 100,50 200,50" 
+        fill="url(#emeraldFur)" stroke="#228B22" stroke-width="8" filter="url(#emerald)"/>
+  
+  <!-- Face -->
+  <circle cx="160" cy="180" r="20" fill="#000000"/> <!-- Left eye -->
+  <circle cx="240" cy="180" r="20" fill="#000000"/>  <!-- Right eye -->
+  <circle cx="165" cy="175" r="5" fill="#FFFFFF"/> <!-- Eye shine -->
+  <circle cx="245" cy="175" r="5" fill="#FFFFFF"/>
+  
+  <!-- Nose -->
+  <path d="M190,220 Q200,230 210,220" stroke="#000000" stroke-width="4" fill="none"/>
+  
+  <!-- Smile -->
+  <path d="M160,240 Q200,280 240,240" stroke="#000000" stroke-width="4" fill="none"/>
+  
+  <!-- Whiskers -->
+  <path d="M140,230 L80,220 M140,240 L85,240 M140,250 L90,260" stroke="#228B22" stroke-width="3"/>
+  <path d="M260,230 L320,220 M260,240 L315,240 M260,250 L310,260" stroke="#228B22" stroke-width="3"/>
+  
+  <!-- Ears -->
+  <path d="M140,100 Q160,80 180,100" fill="url(#emeraldFur)" stroke="#228B22" stroke-width="4" filter="url(#emerald)"/>
+  <path d="M220,100 Q240,80 260,100" fill="url(#emeraldFur)" stroke="#228B22" stroke-width="4" filter="url(#emerald)"/>
+  
+  <!-- Emerald Shine Effects -->
+  <path d="M100,150 Q150,100 200,150" stroke="url(#emeraldShine)" stroke-width="8" fill="none" opacity="0.7"/>
+  <circle cx="280" cy="120" r="15" fill="url(#emeraldShine)" opacity="0.8"/>
+  <circle cx="120" cy="280" r="10" fill="url(#emeraldShine)" opacity="0.7"/>
+  
+  <!-- Extra Emerald Sparkles -->
+  <circle cx="150" cy="150" r="3" fill="#90EE90" opacity="0.8"/>
+  <circle cx="250" cy="200" r="2" fill="#90EE90" opacity="0.7"/>
+  <circle cx="200" cy="300" r="2" fill="#90EE90" opacity="0.8"/>
+</svg> 
